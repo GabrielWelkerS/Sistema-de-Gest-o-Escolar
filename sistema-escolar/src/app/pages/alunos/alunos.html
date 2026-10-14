@@ -1,0 +1,16 @@
+
+<h1>Gestão Escolar</h1>
+<h2>Lista de Alunos</h2>
+
+<p>Bem-vindo ao sistema de gestão escolar!</p>
+
+<p>ID do aluno: {{ idAluno }}</p>
+
+
+<h2>Lista de alunos</h2>
+
+<ul>
+  @for (aluno of alunos; track aluno.id) {
+    <li>{{ aluno.id }} - {{ aluno.nome }}</li>
+  }
+</ul>
