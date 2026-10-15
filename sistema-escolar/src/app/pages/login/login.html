@@ -1,1 +1,28 @@
-<p>login works!</p>
+
+<form (ngSubmit)="fazerLogin()">
+  <label for="usuario">Usuário:</label>
+  <input
+    id="usuario"
+    name="usuario"
+    type="text"
+    [(ngModel)]="usuario"
+  />
+
+  <br><br>
+
+  <label for="senha">Senha:</label>
+  <input
+    id="senha"
+    name="senha"
+    type="password"
+    [(ngModel)]="senha"
+  />
+
+  <br><br>
+
+  <button type="submit">Entrar</button>
+</form>
+
+<button type="button" (click)="fazerLogout()">
+  Sair da conta
+</button>
